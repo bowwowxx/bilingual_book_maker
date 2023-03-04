@@ -87,7 +87,7 @@ class ChatGPT(Base):
         openai.api_key = self.get_key(self.key)
         try:
             completion = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
+                model="gpt-3.5-turbo-0301",
                 messages=[
                     {
                         "role": "user",
@@ -114,7 +114,7 @@ class ChatGPT(Base):
             print(str(e), "will sleep  " + str(sleep_time) + " seconds")
             openai.api_key = self.get_key(self.key)
             completion = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",
+                model="gpt-3.5-turbo-0301",
                 messages=[
                     {
                         "role": "user",
@@ -258,7 +258,7 @@ if __name__ == "__main__":
         type=str,
         choices=sorted(LANGUAGES.keys())
         + sorted([k.title() for k in TO_LANGUAGE_CODE.keys()]),
-        default="zh-hans",
+        default="zh-hant",
         help="language to translate to",
     )
     parser.add_argument(
