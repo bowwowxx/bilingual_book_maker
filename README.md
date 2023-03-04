@@ -1,3 +1,13 @@
+這東西真是太酷了，~難怪一堆人fork~ 
+- 新增Google Colab Notebooks直接Mount GoogleDrive轉書
+- 更換語系預設為繁體
+- 查詢後使用新出較便宜的model gpt-3.5-turbo-0301 
+
+Google Colab Notebooks(可自行取用):  
+https://colab.research.google.com/drive/1DH9h1ySD5sOFWWNNO2oY4mWBF_SQwpG4
+
+---------------
+
 **[中文](./README-CN.md) | English**
 
 # bilingual_book_maker
