@@ -1,10 +1,19 @@
 這東西真是太酷了，~難怪一堆人fork~ 
 - 新增Google Colab Notebooks直接Mount GoogleDrive轉書
-- 更換語系預設為繁體
-- 改用剛出的model:gpt-3.5-turbo-0301 
+- 直接翻譯語系為繁體
+- 測試剛出的model:gpt-3.5-turbo-0301 
+- 新增加pptx翻譯(求生存用)
+- 增加test.py測試OpenAI Model用
 
 Google Colab Notebooks(可自行取用):  
 https://colab.research.google.com/drive/1DH9h1ySD5sOFWWNNO2oY4mWBF_SQwpG4
+
+```shell
+export OPENAI_API_KEY=${your_api_key}
+
+python3 make_pptx.py -f pptx/samplepptx.pptx
+python3 make_book.py --book_name test_books/animal_farm.epub --model gpt3 --no_limit
+```
 
 ---------------
 

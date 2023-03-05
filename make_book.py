@@ -59,7 +59,7 @@ class GPT3(Base):
     def translate(self, text):
         print(text)
         self.headers["Authorization"] = f"Bearer {self.get_key(self.api_key)}"
-        self.data["prompt"] = f"Please help me to translate，`{text}` to {self.language}"
+        self.data["prompt"] = f"Please help me to translate，`{text}` to Traditional Chinese"
         r = self.session.post(self.api_url, headers=self.headers, json=self.data)
         if not r.ok:
             return text
@@ -92,7 +92,7 @@ class ChatGPT(Base):
                     {
                         "role": "user",
                         # english prompt here to save tokens
-                        "content": f"Please help me to translate,`{text}` to {self.language}, please return only translated content not include the origin text",
+                        "content": f"Please help me to translate,`{text}` to Traditional Chinese, please return only translated content not include the origin text",
                     }
                 ],
             )
@@ -118,7 +118,7 @@ class ChatGPT(Base):
                 messages=[
                     {
                         "role": "user",
-                        "content": f"Please help me to translate，`{text}` to Simplified Chinese, please return only translated content not include the origin text",
+                        "content": f"Please help me to translate，`{text}` to Traditional Chinese, please return only translated content not include the origin text",
                     }
                 ],
             )
