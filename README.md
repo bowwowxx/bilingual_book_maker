@@ -14,6 +14,12 @@ export OPENAI_API_KEY=${your_api_key}
 python3 make_pptx.py -f pptx/samplepptx.pptx
 python3 make_book.py --book_name test_books/animal_farm.epub --model gpt3 --no_limit
 ```
+費用參考:  
+- Davinci	        / 每1000字$0.06  / 多種語言
+- GPT-3.5-Turbo	  / 每1000字$0.02  / 英文
+- Text-Davinci-003  / 每1000字$0.06  / 多種語言
+
+
 
 ---------------
 
