@@ -1,4 +1,5 @@
-這東西真是太酷了，~難怪一堆人fork~ 
+[用chatgpt翻譯英文書]
+這東西真是太酷了~難怪一堆人fork~  
 - 新增Google Colab Notebooks直接Mount GoogleDrive轉書
 - 直接翻譯語系為繁體
 - 測試剛出的model:gpt-3.5-turbo-0301 
